@@ -1,0 +1,256 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(214, 213, 213);
+}
+
+header {
+    background-color: #ffffff;
+    border-top: 5px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    width: 7%;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+.logo img{
+    width: 100%;
+}
+
+nav{
+    width: 100%;
+}
+
+nav ul {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    padding: 10px 0;
+    width: 25%;
+    text-align: center;
+    border: 1px solid rgb(208, 197, 197);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: black;
+}
+
+.active_user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.active_user a{
+    text-decoration: none;
+    color: red;
+}
+
+.currently_active{
+    background-color: red;
+    border: 1px solid red;
+}
+.currently_active a{
+    color: white;
+}
+
+.long-text p{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2% 2%;
+}
+
+
+/*sections*/
+section{
+    margin: 0 auto;
+    margin-top: 2%;
+    width: 53.33%;
+    text-align: center;
+
+     
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 
+                0 6px 20px rgba(0, 0, 0, 0.19);
+
+}
+
+section p{
+    text-align: left;
+}
+
+section h3{
+    text-align: left;
+}
+
+
+
+/*sport*/
+
+
+.berlin-sport-header{
+   
+    background-color: rgb(255, 106, 0);
+    color: white;
+}
+
+.articles-sport{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.articles-sport p{
+    color: rgb(255, 106, 0);
+}
+
+.sport-article{
+    width: 30%;
+}
+
+.berlin-sport a ,.culture-show a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* kultura */
+
+
+.culture-show-header{
+   
+    background-color: red;
+    color: white;
+}
+
+.articles-culture{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.articles-culture p{
+    color: red;
+}
+
+.culture-article{
+    width: 30%;
+}
+
+/*zajednicko svim artiklima*/
+.article-img{
+    
+    width: 100%;
+}
+
+.article-img img{
+    width: 100%;
+}
+
+
+
+
+/*student*/
+footer{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(80, 80, 80);
+}
+
+.student-combo-div{
+    width: 53.33%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 
+    0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+.student{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 100%;
+    background-color: white;
+}
+
+.student p{
+    color:rgb(66, 66, 66);
+    text-align: center;
+}
+
+.under-student{
+    padding-top: 7%;
+    width: 100%;
+    background-color: rgb(94, 94, 94);
+}
+
+
+@media screen and (max-aspect-ratio: 1/1) {
+    section{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+
+    section{
+        margin-top: 20%;
+    }
+
+    .logo{
+        width: 15%;
+    }
+
+
+   .articles-culture, .articles-sport{
+    flex-direction: column;
+   }
+
+   .sport-article, .culture-article{
+    width: 80%;
+
+    margin: 0 auto;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: gray;
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    
+
+}
+
+

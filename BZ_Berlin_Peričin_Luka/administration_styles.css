@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(214, 213, 213);
+}
+
+header {
+    background-color: #ffffff;
+    border-top: 5px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 7%;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+.logo img{
+    width: 100%;
+}
+
+nav{
+    width: 100%;
+}
+
+nav ul {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    padding: 10px 0;
+    width: 25%;
+    text-align: center;
+    border: 1px solid rgb(208, 197, 197);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: black;
+}
+
+.active_user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.active_user a{
+    text-decoration: none;
+    color: red;
+}
+
+.currently_active{
+    background-color: red;
+    border: 1px solid red;
+}
+.currently_active a{
+    color: white;
+}
+
+@media screen and (max-width: 520px) {
+
+
+    nav ul li a {
+        text-decoration: none;
+        color: gray;
+        font-weight: bold;
+        font-size: 12px;
+    }
+}
+
+.selection{ 
+    margin: 0 auto;
+    margin-top: 3%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+
+}
+
+.login-registers {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+}
+
+.btn {
+    padding: 2% 2%;
+    text-decoration: none;
+
+
+    background-color: white;
+    color: gray;
+    border: 1px solid black;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.5s;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 
+    0 6px 20px rgba(0, 0, 0, 0.19);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+
+
+.can-be-selected:hover {
+    color: black;
+    background-color: rgb(193, 193, 193);
+}
+
+.currently_active{
+    background-color: red;
+    color: white;
+}
+
+.login-form{
+    background-color: white;
+    border: 1px solid black;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 
+    0 6px 20px rgba(0, 0, 0, 0.19);
+
+    display: flex;
+    justify-content: center;
+    padding: 5% 0;
+    width: 100%;
+}
+
+/*footer*/
+footer{
+    position: fixed;
+    bottom: 0;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(80, 80, 80);
+}
+
+.student-combo-div{
+    width: 53.33%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 
+    0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+.student{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 100%;
+    background-color: white;
+}
+
+.student p{
+    color:rgb(66, 66, 66);
+    text-align: center;
+}
+
+.under-student{
+    padding-top: 7%;
+    width: 100%;
+    background-color: rgb(94, 94, 94);
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+   .selection{
+    width: 75%;
+   }
+
+   .edit_articles{
+    width: 75%;
+
+}
+}
+
+.edit_articles{
+    width: 25%;
+    text-decoration: none;
+    margin: 0 auto;
+    margin-top: 1%;
+}
+
+.edit_articles a{
+    color: red;
+    text-decoration: none;
+    text-align: center;
+
+}
